@@ -1,0 +1,8 @@
+version: "Apple Swift version 5.8 (swiftlang-5.8.0.124.2 clang-1403.0.22.11.100)"
+options: "4544cb108cfd10a9b351587981420cd7a27c75c4b0c44956838d12756960d543"
+build_start_time: [1681141061, 511088000]
+build_end_time: [1681141066, 27672000]
+inputs:
+  "/Users/fabio/projects/private/training/flutter-quiz-app/macos/Flutter/GeneratedPluginRegistrant.swift": [1681141053, 30313601]
+  "/Users/fabio/projects/private/training/flutter-quiz-app/macos/Runner/AppDelegate.swift": [1680713952, 0]
+  "/Users/fabio/projects/private/training/flutter-quiz-app/macos/Runner/MainFlutterWindow.swift": [1680713952, 0]
