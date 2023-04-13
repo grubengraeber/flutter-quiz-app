@@ -193,7 +193,6 @@ class _MyAppState extends State<MyApp> {
   ];
 
   restartApp() {
-    log("RESTARTING... ");
     setState(() {
       _result = 0;
       _questionIndex = 0;
@@ -203,7 +202,9 @@ class _MyAppState extends State<MyApp> {
   void _answerQuestion(answer) {
     if (_questionIndex < questions.length) {
       if (answer["correct"]) {
-        _result += 1;
+        setState(() {
+          _result += 1;
+        });
       }
       setState(() {
         _questionIndex += 1;
@@ -216,10 +217,13 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text("My First App"),
+          title: Text("Quiz App"),
         ),
         body: _questionIndex >= questions.length
-            ? GameOver(_result, questions.length, restartApp)
+            ? Container(
+                alignment: Alignment.center,
+                child: GameOver(_result, questions.length, restartApp),
+              )
             : Column(
                 children: [
                   Question(

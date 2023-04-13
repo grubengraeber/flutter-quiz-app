@@ -20,6 +20,7 @@ class GameOver extends StatelessWidget {
           textAlign: TextAlign.center,
           style: TextStyle(
             fontSize: 28,
+            fontWeight: FontWeight.bold,
           ),
         ),
         ElevatedButton(
